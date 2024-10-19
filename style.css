@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+body .body-container {
+  width: 100vw;
+}
+body .body-container nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding:10px ;
+  margin-bottom: 10px;
+}
+body .body-container nav .first-container,
+body .body-container nav .second-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .body-container nav .first-container .logo {
+  display: none;
+}
+body .body-container nav .first-container .hamburger {
+  width: 30px;
+  height: 100%;
+}
+body .body-container nav .first-container .hamburger img {
+  width: 100%;
+}
+
+body .body-container nav .first-container .companyName p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5b5b5b;
+}
+body .body-container nav .second-container .personName p {
+  display: none;
+}
+body .body-container nav .second-container .arrow {
+  display: none;
+} 
+
+body .body-container main .sideBar {
+  display: none;
+}
+
+body .body-container main .showSidebar .sideBar-logo .close {
+  background-color: darkred;
+  width: 15%;
+}
+body .body-container main .showSidebar .sideBar-logo .close img {
+  width: 100%;
+}
+body .body-container main .showSidebar {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  width: 80%;
+  overflow: auto;
+}
+body .body-container main .showSidebar .sideBar-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px 0 30px;
+}
+body .body-container main .showSidebar .sideBar-logo .logo {
+  width: 70%;
+}
+body .body-container main .showSidebar .sideBar-logo .logo img {
+  width: 100%;
+}
+body .body-container main .showSidebar .side-container {
+  padding: 30px 25px;
+}
+body .body-container main .sideBar .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  gap: 20px;
+}
+body .body-container main .sideBar .box p {
+  font-weight: 500;
+  font-size: 26px;
+  color: #5b5b5b;
+  flex-grow: 1; 
+  text-align: left; 
+  
+}
+
+body .body-container main .dashboard-container .dashboard {
+  width: 100%;
+  box-shadow: -1px 0px 6px 5px rgba(229, 229, 229, 1);
+  padding: 10px;
+  display: block;
+  font-weight: 700;
+}
+
+body .body-container main .dashboard-container .dashboard .text-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+body .body-container main .dashboard-container .dashboard .dashboard-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #c4c4c4;
+}
+body .body-container main .dashboard-container .dashboard .dashboard-right img {
+  width: 16px;
+  height: 17.14px;
+}
+body
+  .body-container
+  main
+  .dashboard-container
+  .dashboard
+  .dashboard-right
+  .second-page {
+  display: none;
+}
+body .body-container main .dashboard-container .dashboard .page {
+font-size: 18px;
+color: #5b5b5b;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body .body-container main .dashboard-container .dashboard .dashboard-nav{
+  display: flex;
+  gap: 1px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+    }
+    body .body-container main .dashboard-container .dashboard .dashboard-nav a{
+      text-decoration: none;
+  background-color: #AA2F2F;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  padding:2px 5px;
+    }
+    body .body-container main .dashboard-container .dashboard .dashboard-nav .active{
+      border:  1px solid #9C3030;
+  background-color: #FFFFFF;
+  color: #A12B2B;
+    }
+    body .body-container main .dashboard-container .dashboard .drug{
+  font-size: 14px;
+  font-weight: 500;
+  color: #5B5B5B;
+    }
+  
+    body .body-container main .dashboard-container .dashboard .table-container table,   body .body-container main .dashboard-container .dashboard .search-container table {
+      width: 100%;
+        border-collapse: collapse; 
+        margin-top: 3px;
+    }
+     body .body-container main .dashboard-container .dashboard .table-container th {
+      background-color: #F3F2F2; 
+      color: #5B5B5B;
+      padding: 5px ;  
+      
+      border: none;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      text-align: left;
+      font-size: 10px;
+      font-weight: 500;
+    }  
+     body .body-container main .dashboard-container .dashboard .table-container td {
+      padding: 5px ; 
+      border: 2px solid #E5E5E5 ;
+      text-align: left; 
+      background-color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 500;
+      vertical-align: top;
+    }
+    body .body-container main .dashboard-container .dashboard .table-container td small{
+      font-size: 10px;
+      background-color: #8F8989;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 1px 2px;
+    }
+    body .body-container main .dashboard-container .dashboard .table-container td button{
+      background-color: #9C3030;
+      border-radius: 5px;
+      border:1px solid #A12B2B;
+      color: #ffffff;
+      padding: 2px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    body .body-container main .dashboard-container .dashboard .table-container .remark{
+      display: none;
+    }
+    body .body-container main .dashboard-container .dashboard .table-container .active{
+      display: block;
+     
+    }
+    body .body-container main .dashboard-container .dashboard .search-container{
+      margin-top: 30px;
+      width: 100%;
+    }
+    
+    body .body-container main .dashboard-container .dashboard .search-container .search-heading{
+      display: none;
+    }
+    body .body-container main .dashboard-container .dashboard .search-container .search-inputs{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+   gap: 2rem;
+    justify-content: space-between;
+    align-items:start;
+    }
+    
+    body .body-container main .dashboard-container .dashboard .search-inputs .input , body .body-container main .dashboard-container .dashboard .table-container .active input{
+      width: 100%;
+      box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.25);
+      border: none;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 5px;
+      text-align: left;
+      
+  
+    }
+    body .body-container main .dashboard-container .dashboard .search-container .search-inputs .flex{
+      display: flex;
+      flex: 1;
+      width: 100%;
+      box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.25);
+     
+      padding: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 5px;
+      text-align: left;
+      
+    }
+    body .body-container main .dashboard-container .dashboard .search-container .search-inputs .flex input{
+      border: none;
+      width: 50%;
+    }
+    
+    body .body-container main .dashboard-container .dashboard .search-container td{
+    padding-bottom: 5px;
+    }
+    body .body-container main .dashboard-container .dashboard .search-container button{
+      background-color: #9C3030;
+      border-radius: 5px;
+      border:1px solid #A12B2B;
+      color: #ffffff;
+      padding: 5px;
+      font-size: 14px;
+      font-weight: 700;
+     margin-top: 1rem;
+    }
+    body .body-container main .dashboard-container .dashboard .search-container .search-item{
+      position: relative; 
+     z-index: 1;
+    }
+    body .body-container main .dashboard-container .dashboard .search-container .search-item .suggestions{
+      position: absolute;
+      width: 100%;
+      box-shadow: 0px -2px 7px 2px rgba(0, 0, 0, 0.25);
+      margin-top: 4px;
+      background-color: #ffffff;
+      border: none; 
+     }
+     .show-height{
+max-height:30vh ;    
+       overflow-y: auto;  
+     }
+    body .body-container main .dashboard-container .dashboard .search-container .suggestions li{
+      list-style: none;
+      font-size: 12px;
+      font-weight: 400;
+      color: #8F8989;
+      padding: 5px;
+    } 
+    body .body-container main .dashboard-container .next-container{
+      margin: 15px 0 10px 10px;
+    }
+    body .body-container main .dashboard-container .next-container .next{
+      background-color: #A12B2B;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-size: 10px;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 8px;
+      color: #FFFFFF;
+      gap: 5px;
+    }
+    body .body-container main .dashboard-container .next-container .next img{
+      width: 15px;
+      height: 15px;
+    }
+body .body-container main .dashboard-container .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  box-shadow: 3px 3px 4px 7px rgba(229, 229, 229, 1);
+  padding: 20px;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+}
+body .body-container main .dashboard-container .footer p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5b5b5b;
+}
+@media screen and (min-width: 768px) {
+  body .body-container nav {
+    padding:10px 25px;
+   
+  }
+  body .body-container nav .first-container .logo {
+    display: block;
+    width: 196px;
+    height: 100%;
+  }
+  body .body-container nav .first-container .logo img{
+   width: 100%; 
+  }  
+ 
+  body .body-container nav .first-container .companyName p {
+    font-size: 36px;
+    font-weight: 900;
+   
+  }
+
+  body .body-container nav .second-container .personName p {
+    display: block;
+    font-size: 24px;
+    font-weight: 900;
+    color: #5b5b5b;
+  }
+  body .body-container nav .second-container .arrow {
+    display: block;
+    width: 15px;
+    height: 15.39px;
+  } 
+  body .body-container main {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  body .body-container main .showSidebar {
+    display: none;
+  }
+  body .body-container main .sideBar {
+    display: block;
+    box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    height: 100%;
+    padding: 31px 25px 10px 25px ;
+    overflow-y: scroll;
+  }
+  body .body-container main .sideBar .sideBar-logo .logo img {
+    display: none;
+  }
+  body .body-container main .sideBar .close {
+    display: none;
+  }
+  body .body-container main .sideBar .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   gap: 20px;
+    padding-bottom: 21.7px;
+  }
+  body .body-container main .sideBar .box p {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  body .body-container main .sideBar .box .img{
+    width: 10px;
+    height: 100%;
+
+  }
+  body .body-container main .sideBar .box .icon{
+    width: 15px;
+    height: 100%;
+
+  }
+  body .body-container main .dashboard-container{
+    width: 80%;
+  }
+  body .body-container main .dashboard-container .dashboard {
+  width: 100%;
+   padding: 10px 20px;
+      font-weight: 900;
+  }
+  body .body-container main .dashboard-container .dashboard .dashboard-right {
+    font-size: 16px;
+  }
+  body
+    .body-container
+    main
+    .dashboard-container
+    .dashboard
+    .dashboard-right
+    img {
+    width: 16px;
+    height: 17.14px;
+  }
+  body
+    .body-container
+    main
+    .dashboard-container
+    .dashboard
+    .dashboard-right
+    .second-page {
+    display: block;
+    color: #5b5b5b;
+  }
+  body .body-container main .dashboard-container .dashboard .page {
+    font-size: 20px;
+  }
+  body .body-container main .dashboard-container .dashboard .dashboard-nav{
+    margin: 20px 0;
+      }  
+  body .body-container main .dashboard-container .dashboard .table-container th {
+    padding: 5px 10px; 
+    font-size: 14px;
+  }
+  body .body-container main .dashboard-container .dashboard .table-container td {
+    padding: 5px 10px; 
+    font-size: 12px;
+  } 
+ 
+  body .body-container main .dashboard-container .dashboard .search-container .search-heading p{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 900;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container{
+    width: 100%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-heading{
+    display: flex;
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    justify-content: space-between;
+    align-items:start;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-inputs{
+  display: flex;
+ gap: 0.2rem;
+  justify-content: space-between;
+  align-items:start;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .item1,   body .body-container main .dashboard-container .dashboard .search-container  .item2{
+    width: 25%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .item3{
+    width: 7%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container  .item4,   body .body-container main .dashboard-container .dashboard .search-container .item5{
+    width: 15%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .item6{
+    width: 20%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-inputs .flex{
+    display: flex;
+    flex: 1;
+    width: 95%;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.25);   
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    text-align: left;
+    
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-inputs .flex input{
+    border: none;
+    width: 50%;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-inputs label{
+  display: none;
+  }
+  body .body-container main .dashboard-container .dashboard .search-container .search-inputs .input{
+    width: 100%;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    text-align: left;
+  }
+ 
+  body .body-container main .dashboard-container .dashboard .search-container button{
+    padding: 4px 10px;
+    margin-left: 5px;
+  }
+
+  body .body-container main .dashboard-container .dashboard .search-container .suggestions li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8989;
+    padding: 5px;
+  }
+
+  body .body-container main .dashboard-container .footer {
+    position: fixed;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 15px 20px; */
+    gap: 0;
+  }
+  body .body-container main .dashboard-container .footer p {
+    font-size: 15px;
+    font-weight: 900;
+    
+  }
+}

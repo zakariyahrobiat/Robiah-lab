@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="first-container">
+          <div class="logo">
+            <img src="./images/logo.png" alt="" srcset="" />
+          </div>
+          <div class="hamburger" id="hamburger">
+            <img src="./images/hambuger.png" alt="" srcset="" />
+          </div>
+          <div class="companyName">
+            <p>Your Laboratory Name</p>
+          </div>
+        </div>
+        <div class="second-container">
+          <div class="notification">
+            <img src="./images/notification.png" alt="" srcset="" />
+          </div>
+          <div class="person">
+            <img src="./images/person.png" alt="" srcset="" />
+          </div>
+          <div class="personName">
+            <p>Isaac Odinaka</p>
+          </div>
+          <div class="arrow">
+            <img src="./images/arrow.png" alt="" srcset="" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="sideBar">
+          <div class="sideBar-logo">
+            <div class="logo">
+              <img src="./images/logo.png" alt="" srcset="" />
+            </div>
+            <div class="close">
+              <img src="./images/close.png" alt="" srcset="" />
+            </div>
+          </div>
+
+          <div class="side-container">
+            <div class="box">
+              <img src="./images/office.png" alt="" srcset="" class="icon"/>
+              <p>Front Office</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/phlebotomy.png" alt="" srcset="" class="icon"/>
+              <p>Phlebotomy</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/laboratory.png" alt="" srcset="" class="icon"/>
+              <p>Laboratory</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/admin.png" alt="" srcset="" class="icon"/>
+              <p>Admin</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/dispatch.png" alt="" srcset="" class="icon"/>
+              <p>Dispatch</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/analyzer.png" alt="" srcset="" class="icon"/>
+              <p>Analyzers</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/QC.png" alt="" srcset="" class="icon"/>
+              <p>QC</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img"/>
+            </div>
+            <div class="box">
+              <img src="./images/account.png" alt="" srcset="" class="icon"/>
+              <p>Account</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img" />
+            </div>
+            <div class="box">
+              <img src="./images/inventory.png" alt="" srcset="" class="icon"/>
+              <p>Inventory</p>
+              <img src="./images/arrow.png" alt="" srcset="" class="img" />
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="dashboard-container">
+          <div class="dashboard">
+            <div class="text-container">
+            <p class="page">Drug Prescription Page</p>
+            <div class="dashboard-right">
+              <p>Home</p>
+              <img src="./images/arrow-right-solid 1.png" alt="" srcset="" />
+              <p>Page 1</p>
+              <img src="./images/arrow-right-solid 1.png" alt="" srcset="" />
+              <p class="second-page">Page 2</p>
+              </div>
+            </div>
+            <div class="dashboard-nav">
+              <a href="#" class="click">Vital Signs</a>
+              <a href="#" class="click">Presenting Complain</a>
+              <a href="#" class="click">Diagnosis</a>
+              <a href="#" class="click">Plan</a>
+              <a href="#" class="click">Charges</a>
+              <a href="#" class="click">Payments</a>
+              <a href="#" class="click">Prescriptions</a>
+              <a href="#" class="click">Medications</a>
+            </div>
+            <p class="drug">Prescribed Drugs</p>
+            <div class="table-container">
+              <table id="table">
+                <thead>
+                <tr>
+                  <th>S/N</th>
+                  <th>Medicine Name</th>
+                  <th>Medicine Class</th>
+                  <th>Dose& Freq.</th>
+                  <th>Duration</th>
+                  <th> Instruction</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                  <tr>
+                    <td colspan="7" style="text-align: center;">No prescribed drug yet</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="display: flex; justify-content: right; ">
+              <div style="width: 25%;">
+                <div style="text-align: right;">
+              <button onclick="Done()" style="background-color: #AA2F2F; color: #FFFFFF; font-weight: 700; 
+              font-size: 8px; padding:2px 3px; border-radius: 5px; border: 1px solid #AA2F2F;" >Done prescribing</button>
+              </div>
+              <div class="remark"  >
+                <label for="" style="font-size: 8px; font-weight: 500;">Remark</label>
+                <input type="text" name="" id="" style="width: 100%;">
+                <button style="background-color: #AA2F2F; color: #FFFFFF; font-weight: 700; 
+                font-size: 8px; padding:2px 5px; border: 1px solid #AA2F2F;">Save Prescription</button>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="search-container">
+              <div class="search-heading">
+                <p class="item1">Medicine class</p>
+                  <p class="item2">Medicine Name</p>
+                  <p class="item3">Dose</p>
+                  <p class="item4">interval</p>
+                  <p class="item5">Duration</p>
+                  <p class="item6">instruction</p>
+              </div>
+              <div class="search-inputs">
+                <div class="item1">
+                <label for="">Medicine Class </label>
+                <div class="search-item">
+                  <div ><input type="text" class="input" id="search" placeholder="search medicine brand"></div>
+                <ul id="suggestions" class="suggestions"></ul>
+              </div>
+              </div>
+              <div class="item2">
+                <label for="">Medicine Name</label>
+                <div class="search-item">
+                 <div > <input type="text" class="input" id="medicine-name" placeholder="Enter  interval"></div>
+                <ul id="name-suggestion" class="suggestions"></ul>
+              </div></div>
+              <div class="item3">
+                <label for="">Dose</label>
+                <div ><input type="text" class="input" name="" id="strength" placeholder="enter instruction"></div>
+              </div>
+             <div class="item4"><label for="">Interval</label> <div ><input type="text"  class="input" name="" id="interval" placeholder="enter duration"></div></div>
+             <div class="item5"><label for="">Duration</label> <div class="flex" ><input type="number"   name="" id="duration" placeholder="type..." "><input type="number" name="" id="stop-duration" placeholder="52"></div></div>
+             <div class="item6"><label for="">Instruction</label><div ><input type="text" class="input" name="" id="instruction" placeholder="Nil"></div></div>
+             
+            
+            </div>
+            <td><button onclick="Add()">Add</button></td>
+          </div>
+          <!-- <div class="next-container"> <button class="next">NEXT <img src="./images/arrow-right.png" alt="" srcset=""></button></div> -->
+          <div class="footer">
+            <p>e-Lab LIS by Netwalkers NG (c) 2022. All right reserved</p>
+            <p>About Us | Contact Us | Terms Of Service | Privacy Policy</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
